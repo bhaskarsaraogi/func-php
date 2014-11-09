@@ -11,9 +11,14 @@ class Func_phpTest extends \PHPUnit_Framework_TestCase
     {
     }
 
-    public function testProducerFirst()
+    public function testSummation()
     {
-        $this->assertTrue(true);
+        $this->assertEquals(6,Func_php::sum(array(1,2,3)));
+    }
+
+    public function testMultiplcation()
+    {
+        $this->assertEquals(6,Func_php::multiply(array(1,2,3)));
     }
 
 }
